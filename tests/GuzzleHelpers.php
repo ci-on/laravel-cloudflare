@@ -6,9 +6,9 @@ use GuzzleHttp\Middleware;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
+use Cion\LaravelCloudflare\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Client as GuzzleClient;
-use Cion\LaravelCloudflare\Client;
 use GuzzleHttp\Exception\RequestException;
 
 trait GuzzleHelpers
