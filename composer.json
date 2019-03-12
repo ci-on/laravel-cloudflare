@@ -1,0 +1,53 @@
+{
+    "name": "cion/laravel-cloudflare",
+    "description": "This Laravel package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.",
+    "keywords": [
+        "laravel",
+        "cloudflare",
+        "api",
+        "artisan",
+        "cache"
+    ],
+    "homepage": "https://github.com/cion/laravel-cloudflare",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Breuer",
+            "email": "chris@cion.agency"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.0",
+        "illuminate/console": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9|^1.0",
+        "orchestra/testbench": "3.1.*|3.2.*|3.3.*|3.4.*|3.5.*|3.6.*|3.7.*|3.8.*",
+        "phpunit/phpunit": "^4.8|^5.0|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cion\\LaravelCloudflare\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cion\\LaravelCloudflare\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": "Cion\\LaravelCloudflare\\ServiceProvider"
+        }
+    }
+}
