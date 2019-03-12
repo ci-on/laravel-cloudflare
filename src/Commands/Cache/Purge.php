@@ -3,8 +3,8 @@
 namespace Cion\LaravelCloudflare\Commands\Cache;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
 use Cion\LaravelCloudflare\Client;
+use Illuminate\Support\Collection;
 use Symfony\Component\Console\Helper\TableCell;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\Console\Helper\TableSeparator;
