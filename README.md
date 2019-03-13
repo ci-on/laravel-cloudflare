@@ -3,7 +3,7 @@
 This Laravel 5 package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ci-on/laravel-cloudflare.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-log-reader)
+[![Quality Score](https://img.shields.io/scrutinizer/g/ci-on/laravel-cloudflare.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-cloudflare)
 [![StyleCI](https://styleci.io/repos/175110511/shield?branch=master)](https://styleci.io/repos/170416972)
 
 Please beware: this package is still a work in progress.

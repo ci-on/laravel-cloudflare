@@ -36,7 +36,7 @@ class Purge extends Command
     protected $description = 'Purge files/tags from Cloudflare\'s cache.';
 
     /**
-     * CloudFlare API client.
+     * Cloudflare API client.
      *
      * @var \Cion\LaravelCloudflare\Client
      */
@@ -148,7 +148,7 @@ class Purge extends Command
         $headers = ['Status', 'Zone', 'Files', 'Tags', 'Hosts', 'Errors'];
 
         $title = [
-            new TableCell('The following zones have been purged from CloudFlare.', ['colspan' => count($headers)]),
+            new TableCell('The following zones have been purged from Cloudflare.', ['colspan' => count($headers)]),
         ];
 
         // Get the status emoji
