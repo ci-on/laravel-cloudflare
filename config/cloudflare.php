@@ -3,21 +3,24 @@
 return [
 
     /*
-     * API key generated on the "My Account" page.
+     * API key generated on the "My Profile" page located when clicking
+     * on the profile picture in the top right corner.
      */
     'key' => env('CLOUDFLARE_KEY'),
 
     /*
-     * Email address associated with your account.
+     * The email address you use to log yourself into Cloudflare.
      */
     'email' => env('CLOUDFLARE_EMAIL'),
 
     /*
-     * Array of zones.
+     * Each zone must have its identifier as a key. This "Zone ID"
+     * can be found when navigating to the Overview page of the domain
+     * that you would like to work with.
      *
-     * Each zone must have its identifier as a key. The value is an
-     * associated array with *optional* arrays of files and/or tags.
-     * If nothing is provided, then everything will be purged.
+     * It is an associated array with *optional* arrays of files
+     * and/or tags. If nothing is provided, then everything will be
+     * purged.
      *
      * E.g.
      *
