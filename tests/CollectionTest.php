@@ -4,7 +4,7 @@ namespace Cion\LaravelCloudflare\Test;
 
 class CollectionTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
