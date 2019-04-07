@@ -21,13 +21,13 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/cloudflare.php' => config_path('cloudflare.php'),
+            __DIR__.'/../config/config.php' => config_path('cloudflare.php'),
         ], 'config');
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/cloudflare.php', 'cloudflare');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'cloudflare');
 
         $this->registerClient();
         $this->registerCommands();

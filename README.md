@@ -1,12 +1,11 @@
-# Interact with Cloudflare
+# Laravel Cloudflare
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://packagist.org/packages/cion/laravel-inspirational-quotes)
+[![Build Status](https://img.shields.io/travis/cion/laravel-cloudflare/master.svg?style=flat-square)](https://travis-ci.org/ci-on/laravel-inspirational-quotes)
+[![Quality Score](https://img.shields.io/scrutinizer/g/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-inspirational-quotes)
+[![Total Downloads](https://img.shields.io/packagist/dt/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://packagist.org/packages/ci-on/laravel-inspirational-quotes)
 
 This Laravel 5 package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.
-
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ci-on/laravel-cloudflare.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-cloudflare)
-[![StyleCI](https://styleci.io/repos/175110511/shield?branch=master)](https://styleci.io/repos/170416972)
-
-Please beware: this package is still a work in progress.
 
 ## Installation
 
@@ -16,30 +15,17 @@ You can install the package via composer:
 composer require cion/laravel-cloudflare
 ```
 
-The package will register itself automatically. 
-
-Optionally, you can publish the package configuration using:
-
-```bash
-php artisan vendor:publish --provider=Cion\\LaravelCloudflare\\ServiceProvider
-```
-
-This will publish a file called `cloudflare.php` in your `config` folder to adjust a few config values.
-
 ## Usage
 
-wip
+``` php
+// Usage description here
+```
 
-NOTE: the cache invalidation process can take up to 30 seconds to complete the propagation.
+### Testing
 
-### Suggestion
-
-Run this command during deployment process in order to automate the cache invalidation process before your app's new version becomes active!
-
-## Testing
-
-1. Copy `.env.example` to `.env` and fill in your database credentials.
-2. Run `composer test`.
+``` bash
+composer test
+```
 
 ### Changelog
 
@@ -49,18 +35,18 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Security
+### Security
 
-If you discover any security related issues, please email mohamed@cion.agency instead of using the issue tracker.
+If you discover any security related issues, please email chris@cion.agency instead of using the issue tracker.
 
 ## Credits
 
-- [Chris Breuer](https://github.com/Chris1904)
-- [Mohamed Benhida](https://github.com/simoebenhida)
+- [Chris Breuer](https://github.com/ci-on)
 - [Sébastien Nikolaou](https://github.com/sebdesign/)
+- [All Contributors](../../contributors)
 
 Inspired by [Artisan Cloudflare](https://github.com/sebdesign/artisan-cloudflare).
 
 ## License
 
-The MIT License (MIT). Please see the [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

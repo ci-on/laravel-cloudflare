@@ -91,7 +91,7 @@ class Purge extends Command
     }
 
     /**
-     * Apply the paremeters for each zone.
+     * Apply the parameters for each zone.
      *
      * Use the config for each zone, unless options are passed in the command.
      *
