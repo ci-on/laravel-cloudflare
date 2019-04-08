@@ -1,9 +1,9 @@
 # Laravel Cloudflare
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://packagist.org/packages/cion/laravel-inspirational-quotes)
-[![Build Status](https://img.shields.io/travis/cion/laravel-cloudflare/master.svg?style=flat-square)](https://travis-ci.org/ci-on/laravel-inspirational-quotes)
-[![Quality Score](https://img.shields.io/scrutinizer/g/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-inspirational-quotes)
-[![Total Downloads](https://img.shields.io/packagist/dt/cion/laravel-inspirational-quotes.svg?style=flat-square)](https://packagist.org/packages/ci-on/laravel-inspirational-quotes)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cion/laravel-cloudflare.svg?style=flat-square)](https://packagist.org/packages/cion/laravel-cloudflare)
+[![Build Status](https://img.shields.io/travis/cion/laravel-cloudflare/master.svg?style=flat-square)](https://travis-ci.org/ci-on/laravel-cloudflare)
+[![Quality Score](https://img.shields.io/scrutinizer/g/cion/laravel-cloudflare.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-cloudflare)
+[![Total Downloads](https://img.shields.io/packagist/dt/cion/laravel-cloudflare.svg?style=flat-square)](https://packagist.org/packages/ci-on/laravel-cloudflare)
 
 This Laravel 5 package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.
 
@@ -41,7 +41,7 @@ If you discover any security related issues, please email chris@cion.agency inst
 
 ## Credits
 
-- [Chris Breuer](https://github.com/ci-on)
+- [Chris Breuer](https://github.com/ci-on/Chris1904)
 - [Sébastien Nikolaou](https://github.com/sebdesign/)
 - [All Contributors](../../contributors)
 
