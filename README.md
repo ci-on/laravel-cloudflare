@@ -42,7 +42,6 @@ If you discover any security related issues, please email chris@cion.agency inst
 ## Credits
 
 - [Chris Breuer](https://github.com/ci-on/Chris1904)
-- [Sébastien Nikolaou](https://github.com/sebdesign/)
 - [All Contributors](../../contributors)
 
 Inspired by [Artisan Cloudflare](https://github.com/sebdesign/artisan-cloudflare).
