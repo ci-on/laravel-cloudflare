@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/cion/laravel-cloudflare.svg?style=flat-square)](https://scrutinizer-ci.com/g/ci-on/laravel-cloudflare)
 [![Total Downloads](https://img.shields.io/packagist/dt/cion/laravel-cloudflare.svg?style=flat-square)](https://packagist.org/packages/ci-on/laravel-cloudflare)
 
-This Laravel 5 package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.
+This Laravel 8 package allows you to easily interact with Cloudflare to accomplish common tasks, such as purging the cache.
 
 ## Installation
 
