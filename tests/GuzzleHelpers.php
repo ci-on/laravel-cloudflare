@@ -2,14 +2,14 @@
 
 namespace Cion\LaravelCloudflare\Test;
 
-use GuzzleHttp\Middleware;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Request;
-use GuzzleHttp\Psr7\Response;
 use Cion\LaravelCloudflare\Client;
-use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Middleware;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Response;
 
 trait GuzzleHelpers
 {
@@ -29,7 +29,7 @@ trait GuzzleHelpers
      * Assert the request URI contains the given path.
      *
      * @param  array  $transaction
-     * @param  string $path
+     * @param  string  $path
      * @return self
      */
     protected function seeRequestContainsPath(array $transaction, $path)
