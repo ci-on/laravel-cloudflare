@@ -2,12 +2,12 @@
 
 namespace Cion\LaravelCloudflare\Commands\Cache;
 
-use Illuminate\Console\Command;
 use Cion\LaravelCloudflare\Client;
+use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 use Symfony\Component\Console\Helper\TableCell;
-use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\Console\Helper\TableSeparator;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 class Purge extends Command
 {
@@ -52,8 +52,8 @@ class Purge extends Command
     /**
      * Purge constructor.
      *
-     * @param \Cion\LaravelCloudflare\Client $client
-     * @param array $zones
+     * @param  \Cion\LaravelCloudflare\Client  $client
+     * @param  array  $zones
      */
     public function __construct(Client $client, array $zones)
     {
@@ -95,7 +95,7 @@ class Purge extends Command
      *
      * Use the config for each zone, unless options are passed in the command.
      *
-     * @param \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[] $zones
+     * @param  \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[]  $zones
      * @return \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[]
      */
     private function applyParameters(Collection $zones)
@@ -118,7 +118,7 @@ class Purge extends Command
     /**
      * Execute the purging operations and return each result.
      *
-     * @param \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[] $zones
+     * @param  \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[]  $zones
      * @return \Illuminate\Support\Collection|\stdClass[]
      */
     private function purge(Collection $zones)
@@ -139,8 +139,8 @@ class Purge extends Command
     /**
      * Display a table with the results.
      *
-     * @param \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[] $zones
-     * @param \Illuminate\Support\Collection|\stdClass[] $results
+     * @param  \Illuminate\Support\Collection|\Symfony\Component\HttpFoundation\ParameterBag[]  $zones
+     * @param  \Illuminate\Support\Collection|\stdClass[]  $results
      * @return void
      */
     private function displayResults(Collection $zones, Collection $results)
@@ -198,7 +198,7 @@ class Purge extends Command
     /**
      * Format an array into a multiline string.
      *
-     * @param array|null $items
+     * @param  array|null  $items
      * @return string
      */
     private function formatItems(array $items = null)
@@ -209,7 +209,7 @@ class Purge extends Command
     /**
      * Format the errors.
      *
-     * @param \stdClass[] $errors
+     * @param  \stdClass[]  $errors
      * @return string[]
      */
     private function formatErrors(array $errors)
@@ -248,7 +248,7 @@ class Purge extends Command
     /**
      * Return 1 if all successes are false, otherwise return 0.
      *
-     * @param \Illuminate\Support\Collection $results
+     * @param  \Illuminate\Support\Collection  $results
      * @return int
      */
     private function getExitCode(Collection $results)

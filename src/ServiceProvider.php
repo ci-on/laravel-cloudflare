@@ -2,8 +2,8 @@
 
 namespace Cion\LaravelCloudflare;
 
-use Illuminate\Support\Collection;
 use GuzzleHttp\Client as GuzzleClient;
+use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider

@@ -3,8 +3,8 @@
 namespace Cion\LaravelCloudflare\Test;
 
 use Cion\LaravelCloudflare\Client;
-use Cion\LaravelCloudflare\ServiceProvider;
 use Cion\LaravelCloudflare\Commands\Cache\Purge;
+use Cion\LaravelCloudflare\ServiceProvider;
 
 class ServiceProviderTest extends TestCase
 {

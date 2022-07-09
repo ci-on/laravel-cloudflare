@@ -2,13 +2,13 @@
 
 namespace Cion\LaravelCloudflare;
 
-use GuzzleHttp\Promise;
-use Psr\Log\LoggerInterface;
-use Illuminate\Support\Collection;
 use GuzzleHttp\Client as GuzzleClient;
-use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise;
+use Illuminate\Support\Collection;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
 
 class Client
 {
@@ -30,8 +30,8 @@ class Client
     /**
      * Constructor.
      *
-     * @param \GuzzleHttp\Client       $client
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param  \GuzzleHttp\Client  $client
+     * @param  \Psr\Log\LoggerInterface  $logger
      */
     public function __construct(GuzzleClient $client, LoggerInterface $logger)
     {
@@ -67,7 +67,7 @@ class Client
      *
      * The returned promise is fulfilled with a collection of results.
      *
-     * @param  \Illuminate\Support\Collection|\GuzzleHttp\Promise\PromiseInterface[] $promises
+     * @param  \Illuminate\Support\Collection|\GuzzleHttp\Promise\PromiseInterface[]  $promises
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     protected function settle(Collection $promises)
@@ -86,7 +86,7 @@ class Client
     /**
      * Put the body of the fulfilled promise into the results.
      *
-     * @param  \Illuminate\Support\Collection|object[] $results
+     * @param  \Illuminate\Support\Collection|object[]  $results
      * @return \Closure
      */
     protected function onFulfilled(Collection $results)
@@ -99,7 +99,7 @@ class Client
     /**
      * Handle the rejected promise and put the errors into the results.
      *
-     * @param  \Illuminate\Support\Collection|object[] $results
+     * @param  \Illuminate\Support\Collection|object[]  $results
      * @return \Closure
      */
     protected function onRejected(Collection $results)
@@ -117,7 +117,7 @@ class Client
     /**
      * Transform a request exception into a result object.
      *
-     * @param  \GuzzleHttp\Exception\RequestException $e
+     * @param  \GuzzleHttp\Exception\RequestException  $e
      * @return \stdClass
      */
     protected function handleException(RequestException $e)
@@ -151,7 +151,7 @@ class Client
     /**
      * Transform the response body into a result object.
      *
-     * @param  \Psr\Http\Message\ResponseInterface $response
+     * @param  \Psr\Http\Message\ResponseInterface  $response
      * @return \stdClass
      */
     protected function getBody(ResponseInterface $response)
